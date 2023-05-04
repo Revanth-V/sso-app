@@ -1,9 +1,8 @@
 export const environment = {
   production: false,
-  keycloak: {
-    issuer: 'http://localhost:8080/realms/MySSOApplications',
-    redirectUri: 'http://localhost:4200/',
-    clientId: 'sso-app',
-    scope: 'openid profile email offline_access',
+  azure: {
+    issuer: 'https://idsvr4.azurewebsites.net',
+    clientId: 'spa',
+    scope: 'openid profile email offline_access api',
   },
 };
